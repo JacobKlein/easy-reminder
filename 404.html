@@ -1,0 +1,16 @@
+<head>
+    <title>EasyDiet</title>
+    <script>
+        const path = window.location.pathname
+            .replace('http://', '')
+            .replace('https://', '')
+            .replace('jacobklein.github.io', '')
+            .replace('/easy-reminder', '');
+        console.log('Setting path:', path);
+        localStorage.setItem('path', path);
+        window.location.href = 'https://jacobklein.github.io/easy-reminder';
+    </script>
+</head>
+<body>
+Redirecting...
+</body>
